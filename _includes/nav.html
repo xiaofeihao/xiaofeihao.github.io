@@ -1,0 +1,19 @@
+<!-- Navigation -->
+<nav class="head-navigation">
+    <div class="container-fluid">
+        <div class="nav-title">
+            <a class="nav-title brand" href="{{ site.baseurl }}/">{{ site.title }}</a>
+        </div>
+        <div id="nav-directory">
+            <ul class="nav-bar-right">
+                {% for item in site.data.directory %}
+                <li>
+                    <a href="{{ site.baseurl }}/{{ item.layout }}">
+                        {{ item.title }}
+                    </a>
+                </li>
+                {% endfor%}
+            </ul>
+        </div>
+    </div>
+</nav>

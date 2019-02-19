@@ -1,0 +1,33 @@
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Cache-Control" content="max-age=36000" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="haoxiaofei">
+    <meta name="keyword"  content="{{ site.keyword }}">
+    <meta name="description" content="{{ site.description }}">
+    <!--TODO: icon-->
+    <!--<link rel="shortcut icon" href="/images/favicon.ico"/>-->
+    <title>{{ page.title }}</title>
+
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="{{ site.url }}/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ site.url }}/css/hxf-custom.css">
+
+    <!-- Pygments Github CSS -->
+    <link rel="stylesheet" href="{{ site.url }}/css/syntax.css">
+
+    <!-- Custom Fonts -->
+    <!-- change font-awesome CDN to qiniu -->
+    <link href="http://cdn.staticfile.org/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- add highlight -->
+    <link rel="stylesheet" href="{{ site.url }}/css/androidstudio.css">
+    <script type="text/javascript" src="{{ site.url }}/js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+</head>

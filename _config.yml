@@ -1,0 +1,30 @@
+# Site
+title: HAOXIAOFEI
+url: https://xiaofeihao.github.io
+baseurl: ""
+logo: logo.png
+keyword: "Android,Android博客,haoxiaofei"
+description: "Android,Android博客,haoxiaofei"
+
+# Jekyll
+paginate: 5
+paginate_path: "page:num"
+
+permalink: /:title/
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+
+# Social Links
+email: haoxiaofei856@gmail.com
+github: xiaofeihao
+weibo: 2955627912
+
+# Gems
+gems: [jekyll-feed,jekyll-sitemap,jekyll-gist,jekyll-paginate]
+
+# Exclude list
+include: [_pages]
+exclude: [README.md, Gemfile, Gemfile.lock, _site, src, vendor, CNAME, LICENSE, Rakefile, .sass-cache, .DS_Store]
+

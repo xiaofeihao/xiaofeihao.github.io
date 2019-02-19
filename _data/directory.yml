@@ -1,0 +1,8 @@
+- title: 首页
+  layout:
+- title: 技术博客
+  layout: blogs
+- title: 飞语流年
+  layout: wx
+- title: 关于
+  layout: about
