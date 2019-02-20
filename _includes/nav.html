@@ -1,10 +1,12 @@
 <!-- Navigation -->
 <nav class="head-navigation">
-    <div class="container-fluid">
+    <div class="nav-container">
         <div class="nav-title">
-            <a class="nav-title brand" href="{{ site.baseurl }}/">{{ site.title }}</a>
+            <a class="nav-brand" href="{{ site.baseurl }}/">
+                <span class="nav-brand-title">{{ site.title }}</span>
+            </a>
         </div>
-        <div id="nav-directory">
+        <div class="nav-directory">
             <ul class="nav-bar-right">
                 {% for item in site.data.directory %}
                 <li>
