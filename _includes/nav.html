@@ -10,8 +10,8 @@
             <ul class="nav-bar-right">
                 {% for item in site.data.directory %}
                 <li>
-                    <a href="{{ site.baseurl }}/{{ item.layout }}">
-                        {{ item.title }}
+                    <a class="nav-item" href="{{ site.baseurl }}/{{ item.layout }}">
+                        <span class="nav-item-name">{{ item.title }}</span>
                     </a>
                 </li>
                 {% endfor%}
