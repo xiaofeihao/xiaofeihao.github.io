@@ -47,7 +47,7 @@
 .block-left,
 .block-right {
     height: 100%;
-    top: 60px;
+    padding-top: 60px;
 }
 .block-left {
     width: 25%;
@@ -65,10 +65,13 @@
 }
 
 .block-left > .content {
+    height: 100%;
+}
+
+.site-info {
     margin: 35px;
     border-radius: 15px;
-    border: 1px solid #e5e5e5;
-    height: 80%;
+    height: 90%;
     background: #e5e5e5;
     text-align: center;
 }
