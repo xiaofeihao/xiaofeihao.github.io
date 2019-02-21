@@ -143,7 +143,7 @@
     bottom: 0;
     width: 100%;
     display: -webkit-flex;
-    justify-content:space-between;/*决定子元素两端对齐，均匀间隔*/
+    justify-content: space-between; /*决定子元素两端对齐，均匀间隔*/
 }
 
 .recommend-item-author,
@@ -158,5 +158,57 @@
 
 /* 文章列表页 */
 .post-list-container {
-    padding: 60px 30px;
+    padding-top: 35px;
+    padding-bottom: 60px;
+    padding-right: 35px;
+}
+
+.post-list-item {
+    display: block;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.post-list-item > a {
+    text-decoration: none;
+}
+
+.post-list-item-title {
+    display: block;
+    font-size: 25px;
+    font-weight: bold;
+    color: #202325;
+}
+
+.post-list-item-desc {
+    display: block;
+    font-size: 15px;
+    color: #777777;
+    margin-top: 10px;
+}
+
+.list-item-tags-container {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.list-item-tags {
+    display: inline-flex;
+    align-items: center;
+    height: 25px;
+    border: 1px solid #e5e5e5;
+    border-radius: 13px;
+    padding: 0 8px;
+    font-size: 15px;
+    color: #2e6da4;
+}
+
+.list-item-tags:hover {
+    color: #4cae4c;
+    text-decoration: none;
+}
+
+.post-list-item-meta {
+    font-size: 10px;
+    color: #777777;
 }
