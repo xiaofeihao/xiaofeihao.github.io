@@ -116,3 +116,8 @@
     overflow: hidden;
     border: 1px solid #e5e5e5;
 }
+
+/* 文章列表页 */
+.post-list-container {
+    padding: 60px 30px;
+}
