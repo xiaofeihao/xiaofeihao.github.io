@@ -215,5 +215,48 @@
 }
 
 .post-container {
-    margin-top: 70px;
+    margin-top: 25px;
+}
+
+.post-head-image {
+    width: 100%;
+    margin-top: 100px;
+}
+
+.post-info {
+    margin-top: 20px;
+    width: 100%;
+    display: -webkit-flex;
+    justify-content: space-between; /*决定子元素两端对齐，均匀间隔*/
+}
+
+.post-person-info {
+    display: inline-block;
+    position: relative;
+}
+
+.post-date {
+    display: inline-block;
+}
+
+.post-avatar {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.post-author {
+    display: inline-block;
+    font-size: 15px;
+    color: #202325;
+    font-weight: bold;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    margin-left: 5px;
+}
+
+.post-tags-container {
+    margin-top: 20px;
 }

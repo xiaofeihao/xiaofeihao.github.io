@@ -5,6 +5,28 @@ layout: default
 <!-- Post Content -->
 <article>
     <div class="container">
+        <img class="post-head-image" src="{{page.image}}"/>
+        <h1>{{ page.title }}</h1>
+        <div class="post-tags-container">
+            {% for tag in page.tags %}
+                <a class="list-item-tags" href="#">{{ tag }}</a>
+            {% endfor %}
+        </div>
+        <div class="post-info">
+            <div class="post-person-info">
+                {% if page.avatar %}
+                    <img class="post-avatar" src="{{page.avatar}}"/>
+                {%else%}
+                    <img class="post-avatar" src="/images/avatar.png">
+                {% endif %}
+                {% if page.author %}
+                <span class="post-author">{{ page.author }}</span>
+                {% else %}
+                <span class="post-author">HaoXiaofei</span>
+                {% endif %}
+            </div>
+            <span class="post-date">{{ page.date | date: "%B %-d, %Y"}}</span>
+        </div>
         <!-- Post Container -->
         <div class="post-container">
             {{ content }}

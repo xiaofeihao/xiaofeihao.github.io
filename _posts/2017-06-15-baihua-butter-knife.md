@@ -3,6 +3,7 @@ layout: post
 title: "超级白话Retrofit源码"
 date: 2017-06-15 19:45:37
 catalog: true
+image: /images/head.png
 tags:
     - android
     - 超级白话系列
