@@ -17,8 +17,12 @@ description: "Keep on going never give up"
         {% for recommend in site.data.recommend %}
         <a href="{{ recommend.href }}">
             <div class="recommend-item">
-                <img src="{{ recommend.img }}" width="100%" height="50%"/>
-                <span>{{ recommend.title }}</span>
+                <img src="{{ recommend.img }}" width="100%" height="68%"/>
+                <span class="recommend-item-title">{{ recommend.title }}</span>
+                <div class="recommend-item-other">
+                    <span class="recommend-item-author">{{ recommend.author }}</span>
+                    <span class="recommend-item-date">{{ recommend.date }}</span>
+                </div>
             </div>
         </a>
         {% endfor %}
