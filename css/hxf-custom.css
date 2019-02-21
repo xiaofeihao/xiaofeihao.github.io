@@ -201,14 +201,19 @@
     padding: 0 8px;
     font-size: 15px;
     color: #2e6da4;
+    text-decoration: none;
 }
 
 .list-item-tags:hover {
-    color: #4cae4c;
+    color: #2e6da4;
     text-decoration: none;
 }
 
 .post-list-item-meta {
     font-size: 10px;
     color: #777777;
+}
+
+.post-container {
+    margin-top: 70px;
 }
