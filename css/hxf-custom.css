@@ -104,7 +104,7 @@
 .recommend-table {
     margin-top: 35px;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 35px;
     position: relative;
     margin-bottom: 35px;
@@ -115,6 +115,45 @@
     border-radius: 15px;
     overflow: hidden;
     border: 1px solid #e5e5e5;
+    position: relative;
+}
+
+.recommend-item > img {
+    height: 58%;
+}
+
+.home-first-recommend:hover,
+.recommend-item:hover {
+    box-shadow: 0 2px 5px 3px #e5e5e5;
+}
+
+.recommend-item-title {
+    font-size: 20px;
+    color: #202325;
+    font-weight: bold;
+    margin: 5px 10px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+
+.recommend-item-other {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: -webkit-flex;
+    justify-content:space-between;/*决定子元素两端对齐，均匀间隔*/
+}
+
+.recommend-item-author,
+.recommend-item-date {
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    color: #9d9d9d;
 }
 
 /* 文章列表页 */
