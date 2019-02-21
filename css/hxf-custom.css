@@ -49,6 +49,7 @@
     height: 100%;
     padding-top: 60px;
 }
+
 .block-left {
     width: 25%;
     float: left;
@@ -61,9 +62,11 @@
     float: right;
     position: relative;
     background: white;
-    overflow: auto;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
+.block-right > .content,
 .block-left > .content {
     height: 100%;
 }
@@ -79,6 +82,37 @@
 .avatar {
     max-width: 100px;
     max-height: 100px;
-    border-radius:50%;
+    border-radius: 50%;
     margin-top: 80px;
+}
+
+.recommend-content {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background: white;
+    padding: 35px;
+}
+
+.home-first-recommend {
+    height: 200px;
+    background: #777777;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.recommend-table {
+    margin-top: 35px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 35px;
+    position: relative;
+    margin-bottom: 35px;
+}
+
+.recommend-item {
+    height: 240px;
+    border-radius: 15px;
+    overflow: hidden;
+    border: 1px solid #e5e5e5;
 }
