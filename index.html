@@ -2,3 +2,50 @@
 layout: base
 description: "Keep on going never give up"
 ---
+
+<div class="recommend-content">
+
+    {% for firstRecommend in site.data.first-recommend%}
+    <a href="{{ firstRecommend.href }}" title="{{ firstRecommend.title }}">
+        <div class="home-first-recommend">
+            <img src="{{ firstRecommend.img }}" width="100%" height="100%"/>
+        </div>
+    </a>
+    {% endfor %}
+
+    <div class="recommend-table">
+        {% for recommend in site.data.recommend %}
+        <a href="{{ recommend.href }}">
+            <div class="recommend-item">
+                <img src="{{ recommend.img }}" width="100%" height="50%"/>
+                <span>{{ recommend.title }}</span>
+            </div>
+        </a>
+        {% endfor %}
+    </div>
+
+</div>
+
+<!--
+    这个方式后续尝试瀑布流布局
+    {% for recommend in site.data.recommend %}
+        {% assign loopindex = forloop.index | modulo: 2 %}
+        {% if loopindex == 1 %}
+        <div class="recommend-table-row">
+            <div class="recommend-item-left">
+                <a href="{{ recommend.href }}">
+                    <img src="{{ recommend.img }}"/>
+                    {{ recommend.title }}
+                </a>
+            </div>
+            {% else %}
+            <div class="recommend-item-right">
+                <a href="{{ recommend.href }}">
+                    <img src="{{ recommend.img }}"/>
+                    {{ recommend.title }}
+                </a>
+            </div>
+        </div>
+        {% endif %}
+        {% endfor %}
+-->
