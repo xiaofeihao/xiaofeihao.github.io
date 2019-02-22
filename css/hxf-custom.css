@@ -43,6 +43,12 @@
     color: green;
 }
 
+@media (max-width: 768px){
+    .nav-directory {
+        display: none;
+    }
+}
+
 /* 下方内容 */
 .block-left,
 .block-right {
@@ -120,6 +126,33 @@
 
 .recommend-item > img {
     height: 58%;
+}
+
+@media (max-width: 1000px) and (min-width: 863px){
+    .recommend-table {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 863px) {
+    .block-left {
+        display: none;
+    }
+    .recommend-table {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .block-right {
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .recommend-table {
+        display: block;
+    }
+    .recommend-item {
+        margin-bottom: 35px;
+    }
 }
 
 .home-first-recommend:hover,
