@@ -2,7 +2,5 @@
   layout:
 - title: 技术博客
   layout: blogs
-- title: 技术译文
-  layout: translation
 - title: 关于
   layout: about
