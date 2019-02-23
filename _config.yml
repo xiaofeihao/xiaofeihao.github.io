@@ -7,6 +7,8 @@ keyword: "Android,Android博客,haoxiaofei"
 description: "Android,Android博客,haoxiaofei"
 
 # Jekyll
+# TODO: 分页功能
+# 文章多了再说，分页只能在html中生效
 paginate: 5
 paginate_path: "page:num"
 
@@ -22,7 +24,11 @@ github: xiaofeihao
 weibo: 2955627912
 
 # Gems
-gems: [jekyll-feed,jekyll-sitemap,jekyll-gist,jekyll-paginate]
+gems:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-paginate
 
 # Exclude list
 include: [_pages]
