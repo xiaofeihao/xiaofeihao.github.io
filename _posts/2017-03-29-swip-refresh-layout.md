@@ -1,13 +1,14 @@
 ---
 layout: post
 title: "SwipeRefreshLayout源码分析"
-date: 2017-03-29 19:30:00
+date: 2017-03-29 19:30:00 +0800
 catalog: true
 image: /images/head.png
 tags:
     - android
     - 组件源码
     - 官方组件分析
+category: tech-blog
 ---
 
 ## 简介

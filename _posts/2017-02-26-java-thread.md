@@ -1,12 +1,13 @@
 ---
 layout: post
 title: "Java线程"
-date: 2017-02-26 12:31:00
+date: 2017-02-26 12:31:00 +0800
 catalog: true
 image: /images/head.png
 tags:
     - Java
     - Java线程
+category: tech-blog
 ---
 
 ## **Java创建多线程的方法**
