@@ -1,10 +1,10 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta http-equiv="Cache-Control" content="max-age=36000" />
+    <meta http-equiv="Cache-Control" content="max-age=36000"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="haoxiaofei">
-    <meta name="keyword"  content="{{ site.keyword }}">
+    <meta name="keyword" content="{{ site.keyword }}">
     <meta name="description" content="{{ site.description }}">
     <link rel="shortcut icon" href="/images/favicon.ico"/>
     <title>{{site.title}} - {{ page.title }}</title>
@@ -25,11 +25,33 @@
 
     <!-- Custom Fonts -->
     <!-- change font-awesome CDN to qiniu -->
-    <link href="https://cdn.staticfile.org/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://cdn.staticfile.org/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"
+          type="text/css">
 
     <!-- add highlight -->
     <link rel="stylesheet" href="{{ site.url }}/css/androidstudio.css">
     <script type="text/javascript" src="{{ site.url }}/js/highlight.pack.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
+
+    <script type="text/javascript">
+        window.onload = function () {
+            var top1 = 0;
+            var nav = document.getElementById('nav');
+            var top3 = document.body.scrollTop || document.documentElement.scrollTop;
+            if (top3 > top1) {
+                nav.classList.add("is-hide");
+                top1 = top3;
+            }
+            window.onscroll = function () {
+                var top2 = document.body.scrollTop || document.documentElement.scrollTop;
+                if (top2 > top1) {
+                    nav.classList.add("is-hide");
+                } else {
+                    nav.classList.remove("is-hide");
+                }
+                top1 = top2;
+            }
+        }
+    </script>
 
 </head>

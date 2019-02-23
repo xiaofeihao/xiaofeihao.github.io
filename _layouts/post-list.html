@@ -21,7 +21,7 @@ layout: base
         <div class="list-item-tags-container">
             {% if post.tags %}
             {% for tag in post.tags%}
-            <a class="list-item-tags" href="#">{{ tag }}</a>
+            <a class="list-item-tags" href="{{site.url}}/tags#{{ tag }}">{{ tag }}</a>
             {% endfor %}
             {% endif%}
         </div>
