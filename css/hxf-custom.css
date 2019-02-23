@@ -43,7 +43,7 @@
     color: green;
 }
 
-@media (max-width: 768px){
+@media (max-width: 768px) {
     .nav-directory {
         display: none;
     }
@@ -79,9 +79,7 @@
 
 .site-info {
     margin: 35px;
-    border-radius: 15px;
     height: 90%;
-    background: #e5e5e5;
     text-align: center;
 }
 
@@ -102,9 +100,28 @@
 
 .home-first-recommend {
     height: 200px;
-    background: #777777;
-    border-radius: 15px;
     overflow: hidden;
+    background-size: cover;
+}
+
+.home-first-recommend-title-div {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    padding-left: 50px;
+}
+
+.home-first-recommend-title {
+    display: inline-block;
+    font-size: 40px;
+    color: white;
+    margin-left: 10px;
+}
+
+.home-first-recommend-logo {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
 }
 
 .recommend-table {
@@ -118,7 +135,6 @@
 
 .recommend-item {
     height: 240px;
-    border-radius: 15px;
     overflow: hidden;
     border: 1px solid #e5e5e5;
     position: relative;
@@ -128,7 +144,7 @@
     height: 58%;
 }
 
-@media (max-width: 1000px) and (min-width: 863px){
+@media (max-width: 1000px) and (min-width: 863px) {
     .recommend-table {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -138,9 +154,11 @@
     .block-left {
         display: none;
     }
+
     .recommend-table {
         grid-template-columns: repeat(2, 1fr);
     }
+
     .block-right {
         width: 100%;
     }
@@ -150,6 +168,7 @@
     .recommend-table {
         display: block;
     }
+
     .recommend-item {
         margin-bottom: 35px;
     }
@@ -315,7 +334,7 @@
     text-align: center;
     padding-top: 50px;
     background-image: url("/images/head.png");
-    background-size:cover;
+    background-size: cover;
 }
 
 .bottom-block {
@@ -337,11 +356,13 @@
         width: 550px;
     }
 }
+
 @media (min-width: 992px) {
     .vertical-base-container {
         width: 800px;
     }
 }
+
 @media (min-width: 1200px) {
     .vertical-base-container {
         width: 900px;
@@ -349,7 +370,7 @@
 }
 
 /* 控制博文内的图片大小 */
-.post-container img{
+.post-container img {
     display: block;
     max-width: 100%;
     height: auto;

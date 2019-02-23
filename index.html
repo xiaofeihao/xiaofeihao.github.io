@@ -1,15 +1,21 @@
 ---
 layout: base
 title: 首页
-description: "Keep on going never give up"
+description: "相信坚持的力量"
 ---
 
 <div class="recommend-content">
 
     {% for firstRecommend in site.data.first-recommend%}
     <a href="{{ firstRecommend.href }}" title="{{ firstRecommend.title }}">
-        <div class="home-first-recommend">
-            <img src="{{ firstRecommend.img }}" width="100%" height="100%"/>
+        <div class="home-first-recommend"
+            style="background-image: url('{{ firstRecommend.img }}')">
+            <div class="home-first-recommend-title-div">
+                {% if firstRecommend.logo %}
+                <img class="home-first-recommend-logo" src="{{ firstRecommend.logo }}"/>
+                {% endif %}
+                <span class="home-first-recommend-title">{{ firstRecommend.title }}</span>
+            </div>
         </div>
     </a>
     {% endfor %}

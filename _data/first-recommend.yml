@@ -1,3 +1,4 @@
-- img: /images/head.png
-  title: 首页头图推荐位
+- img: /images/outline/head_img.png
+  title: 开站宣言
   href: /awesome/
+  logo: /images/logo100.png
