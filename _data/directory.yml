@@ -2,5 +2,7 @@
   layout:
 - title: 技术博客
   layout: blogs
+- title: 其他
+  layout: others
 - title: 关于
   layout: about

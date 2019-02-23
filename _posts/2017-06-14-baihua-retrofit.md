@@ -1,12 +1,13 @@
 ---
 layout: post
 title: "超级白话Retrofit2源码"
-date: 2017-06-14 20:30:00
+date: 2017-06-14 20:30:00 +0800
 catalog: true
 image: /images/head.png
 tags:
     - android
     - 超级白话系列
+category: tech-blog
 ---
 
 ## **关于retrofit的简单使用**

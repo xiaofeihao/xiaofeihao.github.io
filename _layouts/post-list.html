@@ -3,7 +3,10 @@ layout: base
 ---
 
 <div class="post-list-container">
+    {% assign isEmpty = true %}
     {% for post in site.posts %}
+    {% if post.category == page.cate %}
+    {% assign isEmpty = false %}
     <div class="post-list-item">
         <a target="_blank" href="{{post.url}}">
             <span class="post-list-item-title">{{ post.title }}</span>
@@ -17,9 +20,9 @@ layout: base
         </a>
         <div class="list-item-tags-container">
             {% if post.tags %}
-                {% for tag in post.tags%}
-                <a class="list-item-tags" href="#">{{ tag }}</a>
-                {% endfor %}
+            {% for tag in post.tags%}
+            <a class="list-item-tags" href="#">{{ tag }}</a>
+            {% endfor %}
             {% endif%}
         </div>
         <span class="post-list-item-meta">
@@ -28,5 +31,10 @@ layout: base
         </span>
     </div>
     <hr>
+    {% endif %}
     {% endfor %}
+
+    {% if isEmpty %}
+    <span>列表空空如也</span>
+    {% endif %}
 </div>

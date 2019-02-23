@@ -1,12 +1,13 @@
 ---
 layout: post
 title: "超级白话ButterKnife源码"
-date: 2017-06-15 19:45:37
+date: 2017-06-15 19:45:37 +0800
 catalog: true
 image: /images/head.png
 tags:
     - android
     - 超级白话系列
+category: tech-blog
 ---
 
 ## **ButterKnife简单使用**
