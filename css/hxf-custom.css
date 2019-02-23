@@ -7,6 +7,12 @@
     padding: 0 50px;
     position: fixed;
     z-index: 99;
+    transition: transform .5s;
+    transform: translateZ(0);
+}
+
+.is-hide {
+    transform: translateY(-100%);
 }
 
 .nav-title,
@@ -50,6 +56,10 @@
 }
 
 /* 下方内容 */
+.body-container {
+    overflow-y: auto;
+}
+
 .block-left,
 .block-right {
     height: 100%;
@@ -60,7 +70,6 @@
     width: 25%;
     float: left;
     background: white;
-    position: fixed;
 }
 
 .block-right {
@@ -69,12 +78,16 @@
     position: relative;
     background: white;
     overflow-x: hidden;
-    overflow-y: auto;
 }
 
 .block-right > .content,
 .block-left > .content {
     height: 100%;
+}
+
+.left-tags-title {
+    color: #9d9d9d;
+    font-size: 15px;
 }
 
 .site-info {
@@ -338,7 +351,6 @@
 }
 
 .bottom-block {
-    padding-top: 50px;
     overflow: auto;
 }
 
@@ -376,3 +388,58 @@
     height: auto;
     margin: 1.5em auto 1.6em auto;
 }
+
+/* 下面的参考gityuan.com */
+.tags-container {
+    padding-top: 20px;
+}
+
+#tag_cloud {
+}
+
+#tag_cloud > a {
+    display: inline-block;
+    height: 25px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background: #9d9d9d;
+    padding: 0 10px;
+    text-align: center;
+    line-height: 25px;
+    color: white;
+    text-decoration: none;
+}
+
+#tag_cloud > a:hover {
+    background: #337ab7;
+    text-decoration: none;
+}
+
+.one-tag-list .tag-text {
+    font-size: 16px;
+    color: #337ab7;
+}
+
+.one-tag-list .post-preview {
+    position: relative;
+}
+.one-tag-list .post-preview > a .post-title {
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 20px;
+    color: #202325;
+}
+.one-tag-list .post-preview > a .post-title:hover {
+    color: #337ab7;
+}
+@media only screen and (min-width: 768px) {
+    .one-tag-list .post-preview {
+        margin-left: 20px;
+    }
+    .one-tag-list .post-preview > a > .post-title {
+        font-size: 18px;
+        line-height: 1.3;
+    }
+}
+

@@ -5,4 +5,18 @@
 
     <h5>{{ page.description }}</h5>
 
+    <hr>
+
+    <span class="left-tags-title">标签</span>
+
+    <!-- 标签云 -->
+    <div class="tags-container">
+        <div id='tag_cloud'>
+            {% for tag in site.tags %}
+            <a target="_blank" href="{{ site.url }}/tags/#{{ tag[0] }}"
+               title="{{ tag[0] }}" rel="{{ tag[1].size }}">{{ tag[0] }}</a>
+            {% endfor %}
+        </div>
+    </div>
+
 </div>
