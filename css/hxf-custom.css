@@ -37,16 +37,19 @@
 
 .nav-brand-title {
     color: black;
+    text-decoration: none;
 }
 
 .nav-item-name {
     color: #777777;
     margin: 0 10px;
+    text-decoration: none;
 }
 
 .nav-item-name:hover,
 .nav-brand-title:hover {
-    color: green;
+    color: #337ab7;
+    text-decoration: none;
 }
 
 @media (max-width: 768px) {
@@ -424,22 +427,85 @@
 .one-tag-list .post-preview {
     position: relative;
 }
+
 .one-tag-list .post-preview > a .post-title {
     font-size: 18px;
     font-weight: 500;
     margin-top: 20px;
     color: #202325;
 }
+
 .one-tag-list .post-preview > a .post-title:hover {
     color: #337ab7;
 }
+
 @media only screen and (min-width: 768px) {
     .one-tag-list .post-preview {
         margin-left: 20px;
     }
+
     .one-tag-list .post-preview > a > .post-title {
         font-size: 18px;
         line-height: 1.3;
     }
 }
 
+/**
+404页面
+ */
+.page404-container {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page404-nav {
+    background: transparent;
+    border: none;
+}
+
+.page404-nav .nav-brand-title {
+    color: white;
+    text-decoration: none;
+}
+
+.page404-nav .nav-item-name {
+    color: white;
+    text-decoration: none;
+}
+
+.page404-nav .nav-item-name:hover,
+.page404-nav .nav-brand-title:hover {
+    color: #337ab7;
+    text-decoration: none;
+}
+
+.page404-nav .nav-brand-title:hover {
+    color: #337ab7;
+    text-decoration: none;
+}
+
+.page-404-blog-nav {
+    color: orange;
+}
+
+.page404-title-container {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 30px;
+}
+
+.page-404-blog-nav {
+    font-size: 35px;
+    font-weight: bold;
+    display: block;
+}
+
+.page404-description {
+    color: white;
+    font-size: 20px;
+}

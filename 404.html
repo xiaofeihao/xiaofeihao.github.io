@@ -1,24 +1,19 @@
 ---
 layout: default
+description: "网站已流浪，请点击上方回到博客列表或导航栏返回首页"
+header-img: "images/page404.jpg"
+permalink: /404.html
 ---
 
-<style type="text/css" media="screen">
-  .container {
-    margin: 10px auto;
-    max-width: 600px;
-    text-align: center;
-  }
-  h1 {
-    margin: 30px 0;
-    font-size: 4em;
-    line-height: 1;
-    letter-spacing: -1px;
-  }
-</style>
-
-<div class="container">
-  <h1>404</h1>
-
-  <p><strong>Page not found :(</strong></p>
-  <p>The requested page could not be found.</p>
+<div class="page404-container" style="background-image: url('{{site.url}}/{{ page.header-img }}')">
+    <div class="page404-title-container">
+        <a href="{{site.url}}/blogs">
+            <span class="page-404-blog-nav">HAOXIAOFEI 博客列表</span>
+        </a>
+        <span class="page404-description">{{ page.description }}</span>
+    </div>
 </div>
+
+<script>
+    document.getElementById("nav").classList.add("page404-nav");
+</script>
